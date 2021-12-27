@@ -16,7 +16,7 @@ import (
 const maxNameBytes int = 704
 
 // Semicolon is not allowed in MacOS and spaces is just my personal preference
-var illegalChars = regexp.MustCompile(`[\s:]`)
+var illegalChars = regexp.MustCompile(`[:]`)
 
 // ChangeFileTimes matches the file times with the Evernote metadata
 //

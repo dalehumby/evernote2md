@@ -13,7 +13,7 @@ import (
 const maxNameBytes int = 245
 
 // Additional rule for Windows
-var illegalChars = regexp.MustCompile(`[\s\\|"'<>&_=+:?*]`)
+var illegalChars = regexp.MustCompile(`[\\|"'<>&_=+:?*]`)
 
 // ChangeFileTimes uses SetFileTime syscall in Windows implementation
 // which supports updating both creation and modification dates
