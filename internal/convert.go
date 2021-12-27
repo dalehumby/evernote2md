@@ -17,9 +17,9 @@ import (
 )
 
 const FrontMatterTemplate = `---
-date: '{{.CTime}}'
-updated_at: '{{.MTime}}'
-title: {{ trim .Title }}
+date: "{{.CTime}}"
+updated_at: "{{.MTime}}"
+title: "{{ trim .Title }}"
 {{- if .TagList }}
 tags: [ {{ .TagList }} ]
 {{- end -}}
@@ -37,7 +37,7 @@ longitude: {{ .Longitude -}}
 altitude: {{ .Altitude -}}
 {{- end -}}
 {{- if .Source }}
-source: {{ trim .Source -}}
+source: "{{ trim .Source -}}"
 {{- end }}
 {{- end }}
 
